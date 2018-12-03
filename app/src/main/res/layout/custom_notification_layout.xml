@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/notifImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notifImage"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/notifTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+        android:id="@+id/notifText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notifTitle"
+        android:textColor="#5c5f61"
+        />
+
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/notifText"
+            android:background="@color/bg"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/prochainPassage"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:textColor="#5c5f61"
+            />
+
+        <TextView
+            android:id="@+id/horairePassage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prochainPassage"
+            android:layout_below="@id/separator"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:textColor="#5c5f61"
+            android:gravity="end" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

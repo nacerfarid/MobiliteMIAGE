@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Bienvenue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonTRAM"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_above="@+id/buttonFAVORIS"
+        android:layout_alignLeft="@+id/buttonPROXIMO"
+        android:layout_alignStart="@+id/buttonPROXIMO"
+        android:background="@drawable/bottom_right"
+        android:focusable="true"
+        android:text="TRAM"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/buttonFAVORIS"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonFLEXO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:background="@drawable/if_favorite"
+        android:src="@drawable/button_rounded" />
+
+    <Button
+        android:id="@+id/buttonCHRONO"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonTRAM"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/bottom_left"
+        android:focusable="true"
+        android:text="CHRONO"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonFLEXO"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_alignLeft="@+id/buttonCHRONO"
+        android:layout_alignStart="@+id/buttonCHRONO"
+        android:layout_alignTop="@+id/buttonPROXIMO"
+        android:background="@drawable/top_left"
+        android:focusable="true"
+        android:text="FLEXO"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonPROXIMO"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:background="@drawable/top_right"
+        android:focusable="true"
+        android:text="PROXIMO"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/markerMAP"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonTRAM"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:background="@drawable/if_map"
+        android:src="@drawable/button_rounded" />
+
+    <ImageButton
+        android:id="@+id/historyStops"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonTRAM"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/if_history"
+        android:src="@drawable/button_rounded" />
+
+</RelativeLayout>
